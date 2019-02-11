@@ -1,0 +1,15 @@
+<h1>list of students</h1>
+<%= link_to "create student", new_student_path %>
+<p> 
+<% @students.each do |student| %>
+Name: 
+<%= student.firstname %> <%= student.lastname %> <br>
+Age: <%= student.age %> <br>
+Education: <%= student.education %> <br>
+
+<%= link_to "Show student", student_path(student) %> 
+<%= link_to 'Edit Student', edit_student_path(student) %> 
+<%= link_to "delete", student_path(student), method: :delete %>
+<% end %>
+
+</p>

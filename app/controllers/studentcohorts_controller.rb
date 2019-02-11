@@ -1,0 +1,2 @@
+class StudentcohortsController < ApplicationController
+end
