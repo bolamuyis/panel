@@ -1,0 +1,7 @@
+<%= form_with(model: @course) do |f| %>
+<p>
+Name: <%= f.text_field :name %> <br>
+Hours: <%= f.number_field :hours %> <br>
+<%= f.submit %>
+<% end %>
+</p>

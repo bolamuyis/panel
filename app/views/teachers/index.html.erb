@@ -1,2 +1,18 @@
 <h1>Teachers#index</h1>
-<p>Find me in app/views/teachers/index.html.erb</p>
+
+<body class="style">
+
+<div class="bodwrapper">
+<%= link_to "create teacher", new_teacher_path %>
+<% @teachers.each do |teacher| %>
+<p>
+<span class="">Name: <strong><%= teacher.firstname %> <%= teacher.lastname %></strong></span>
+<span>| Age: <%= teacher.age %> </span><br>
+<span>Education: <%= teacher.education %></span><br>
+<%= link_to "Show teacher", teacher_path(teacher) %> 
+<%= link_to "Edit teacher", edit_teacher_path(teacher) %> 
+<%= link_to "delete", teacher_path(teacher), method: :delete %>
+<% end %>
+</p>
+</div>
+</body>

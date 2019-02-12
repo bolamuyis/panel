@@ -1,3 +1,24 @@
 // Place all the styles related to the students controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.style {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS','Gill Sans', sans-serif;
+    background-color: rgb(208, 208, 144);
+    color: brown;
+    display: block;
+    padding: 10px 50px;
+    margin: 0;
+}
+.bodwrapper {
+    padding: 20px 50px;
+    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS','Gill Sans', sans-serif;
+    font-size: 1.25em;
+}
+a {
+    color: rgb(118, 118, 118);
+}

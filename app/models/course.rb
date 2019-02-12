@@ -1,3 +1,3 @@
 class Course < ApplicationRecord
-    has_many :cohorts, dependent: :destroy
+    has_many :cohorts
 end

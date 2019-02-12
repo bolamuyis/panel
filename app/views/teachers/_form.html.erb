@@ -1,0 +1,11 @@
+<%= form_with(model: @teacher) do |f| %>
+<p>
+First Name:<%= f.text_field :firstname %> <br>
+Last Name:<%= f.text_field :lastname %> <br>
+Age:<%= f.number_field :age %> <br>
+Salary:<%= f.number_field :salary %> <br>
+Education:<%= f.text_field :education %> <br>
+
+<%= f.submit %>
+<% end %>
+</p>
