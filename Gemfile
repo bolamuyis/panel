@@ -60,3 +60,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+# Raven for Ruby is a client and integration layer for the Sentry error reporting API. 
+# It supports Ruby 1.9.3 and 2.x. JRuby support is provided but experimental.
+gem 'sentry-raven'
