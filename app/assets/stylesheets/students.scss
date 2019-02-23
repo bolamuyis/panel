@@ -9,16 +9,53 @@
 h1 {
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS','Gill Sans', sans-serif;
     background-color: rgb(208, 208, 144);
-    color: brown;
+    color: rgb(65, 50, 50);
     display: block;
     padding: 10px 50px;
     margin: 0;
 }
 .bodwrapper {
     padding: 20px 50px;
-    font-family:  'Gill Sans MT', Calibri, 'Trebuchet MS','Gill Sans', sans-serif;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS','Gill Sans', sans-serif;
     font-size: 1.25em;
+    margin: 0 auto;
+    width: 350px;
+}
+.bodwrapper a {
+    text-decoration: none;
+}
+.bodwrapper a:hover {
+    text-decoration: none;
+    background-color: rgb(65, 50, 50);
+    color: white;
+    padding: 0 5px;
+}
+span.courseLabel {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: .85rem;
+    letter-spacing: .2rem;
+    color: grey;
+    display:inline-block;
+}
+span.modifylinks {
+    margin: 10px 0 0 0;
+    font-size: .85rem;
+    display:inline-block;
+    letter-spacing: .1rem;
+    border-top: solid black .25px;
+    border-bottom: solid black .25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: .7;
+}
+.dataInfo {
+    line-height: 1.5rem;
 }
 a {
     color: rgb(118, 118, 118);
+}
+footer {
+    background: rgb(208, 208, 144);
+    color: brown;
 }

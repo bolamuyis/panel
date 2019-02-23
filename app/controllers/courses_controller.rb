@@ -1,4 +1,7 @@
 class CoursesController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+  before_action :admin_only, only: [:delete, :create, :new]
+
   def index
     @courses = Course.all 
   end

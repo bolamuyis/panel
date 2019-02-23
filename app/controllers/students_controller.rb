@@ -1,6 +1,9 @@
 class StudentsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+  before_action :admin_only, only: [:delete, :create, :new]
+
   def index
-    @students = Student.all 
+    @students = Student.all.order('created_at DESC')
   end
   def new
     @student = Student.new
